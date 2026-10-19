@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Self-assessment | Amauri Hopewell</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Southern New Hampshire University</p>
+      <h1>Amauri Hopewell</h1>
+      <p class="tagline">Professional self-assessment</p>
+      <nav>
+        <a href="index.html">Self-assessment</a>
+        <a href="code-review.html">Code review</a>
+        <a href="software-design.html">Software design</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="databases.html">Databases</a>
+        <a href="https://github.com/AmauriHopewell" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap prose">
+    <h2>How the work fits together</h2>
+    <p>
+      CS-320 is the shape of a service: field rules, storage, HTTP, and a login.
+      CS-300 is the choice of structure and the cost of that choice, including a
+      schedule that has to respect prerequisites. CS-340 is where those ideas land
+      in stored data: a collection, an index, a role, and a screen a staff member
+      can open.
+    </p>
+    <p>
+      The Module Two code review walks the original Contact service. After that,
+      each enhancement went on its own branch so a reviewer can diff it against
+      <code>main</code>. I asked for comments on the auth filter, the median-first
+      BST, and the unique index. The grades came back without a second code pass,
+      so those branches are the enhanced work.
+    </p>
+    <p>
+      Grazioso staff need a filter they can open. <code>dashboard.py</code> is that
+      screen. For a hiring manager, the same idea is the README at the top of each
+      enhanced folder.
+    </p>
+    <p>
+      Outcome 5 is treating a record as something you protect on purpose. Contact
+      exits if the staff and admin passwords are missing. A missing token is 401
+      with an empty body. A staff token on a write is 403 with an empty body.
+      AnimalShelter does not connect when <code>MONGO_USER</code> and
+      <code>MONGO_PASS</code> are empty. An empty lookup on delete returns 0.
+    </p>
+    <p class="actions">
+      <a class="btn" href="docs/CS-499_7-1_Professional_Self_Assessment_Amauri_Hopewell.pdf">Full self-assessment (PDF)</a>
+      <a class="btn alt" href="code-review.html">Code review</a>
+    </p>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Amauri Hopewell &middot; CS-499 Computer Science Capstone &middot; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

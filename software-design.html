@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Software design | Amauri Hopewell</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">CS-320 &middot; Software design and engineering</p>
+      <h1>Contact service</h1>
+      <p class="tagline">Original on main &middot; Enhancement on cs499-milestone-two</p>
+      <nav>
+        <a href="index.html">Self-assessment</a>
+        <a href="code-review.html">Code review</a>
+        <a href="software-design.html" class="active">Software design</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="databases.html">Databases</a>
+        <a href="https://github.com/AmauriHopewell" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap prose">
+    <h2>What changed</h2>
+    <p>
+      ContactService still owns the CS-320 field rules. The id is final. Names are
+      at most 10 characters. The address is at most 30. The phone is ten digits.
+      A repository sits under that service. Tests use an in-memory HashMap. The
+      running service uses SQLite. ContactApi is a JDK HttpServer, one class, not Spring.
+    </p>
+    <p>
+      AuthService has staff and admin. Passwords come from
+      <code>CONTACT_STAFF_PASSWORD</code> and <code>CONTACT_ADMIN_PASSWORD</code>.
+      The process exits if those are missing. A missing token is 401 with
+      <code>{}</code>. A staff token on a write is 403 with <code>{}</code>.
+      AuditLog records actor, action, id, and status. It does not take a phone number.
+      <code>mvn test</code> is 37 tests.
+    </p>
+    <h2>How to run</h2>
+    <p>From the <code>enhanced</code> folder on <code>cs499-milestone-two</code>, with JDK 17 and Maven:</p>
+    <p><code>mvn test</code></p>
+    <p>
+      The original Eclipse tree (packages Contact, com, and Src) stays on
+      <code>main</code>. The enhanced tree uses <code>edu.snhu.contact</code>.
+    </p>
+    <p class="actions">
+      <a class="btn" href="https://github.com/AmauriHopewell/CS320/tree/cs499-milestone-two/enhanced" target="_blank" rel="noopener">Enhanced code</a>
+      <a class="btn alt" href="https://github.com/AmauriHopewell/CS320" target="_blank" rel="noopener">Original (main)</a>
+      <a class="btn alt" href="docs/CS-499_3-2_Narrative_Software_Design_Amauri_Hopewell.pdf">Narrative PDF</a>
+    </p>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Amauri Hopewell &middot; CS-499 Computer Science Capstone &middot; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

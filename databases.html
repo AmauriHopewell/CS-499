@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Databases | Amauri Hopewell</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">CS-340 &middot; Databases</p>
+      <h1>Grazioso Salvare</h1>
+      <p class="tagline">Original on main &middot; Enhancement on cs499-milestone-four</p>
+      <nav>
+        <a href="index.html">Self-assessment</a>
+        <a href="code-review.html">Code review</a>
+        <a href="software-design.html">Software design</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="databases.html" class="active">Databases</a>
+        <a href="https://github.com/AmauriHopewell" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap prose">
+    <h2>What changed</h2>
+    <p>
+      create, read, update, and delete go through one module. <code>animal_id</code>
+      has a unique index. Lookups go through an allow-list, and an operator key such
+      as <code>$where</code> is rejected. Staff and admin share one Mongo login from
+      the environment. The dashboard role decides who can write. An empty lookup on
+      delete returns 0. The original delete used <code>many=True</code>.
+    </p>
+    <p>
+      <code>python -m pytest tests -q</code> is 12 tests on mongomock. If
+      <code>MONGO_USER</code> and <code>MONGO_PASS</code> are empty,
+      <code>python dashboard.py</code> opens that same in-memory data with seven
+      sample dogs. No cluster is required for that path. When credentials are set,
+      live Mongo defaults to <code>localhost</code> port 27017.
+    </p>
+    <p>
+      Still open, and called out in the self-assessment: the unique index can fail
+      on a dirty AAC dump, aggregation groups <code>outcome_type</code>, the
+      dashboard is a table and a pie chart, and the insert payload is not allow-listed.
+      The original constructor on <code>main</code> still has its course defaults.
+      The enhanced module does not copy them.
+    </p>
+    <h2>How to run</h2>
+    <p>From the <code>enhanced</code> folder on <code>cs499-milestone-four</code>:</p>
+    <p><code>python -m pip install -r requirements.txt</code></p>
+    <p><code>python -m pytest tests -q</code></p>
+    <p><code>python dashboard.py</code></p>
+    <p>Then open <code>http://127.0.0.1:8050</code>.</p>
+    <p class="actions">
+      <a class="btn" href="https://github.com/AmauriHopewell/CS340/tree/cs499-milestone-four/enhanced" target="_blank" rel="noopener">Enhanced code</a>
+      <a class="btn alt" href="https://github.com/AmauriHopewell/CS340" target="_blank" rel="noopener">Original (main)</a>
+      <a class="btn alt" href="docs/CS-499_5-2_Narrative_Databases_Amauri_Hopewell.pdf">Narrative PDF</a>
+    </p>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Amauri Hopewell &middot; CS-499 Computer Science Capstone &middot; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

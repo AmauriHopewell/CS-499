@@ -13,78 +13,100 @@
       <h1>Amauri Hopewell</h1>
       <p class="tagline">B.S. Computer Science &middot; Software Engineering &middot; CS-499 Capstone ePortfolio</p>
       <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="#artifacts">Artifacts</a>
+        <a href="index.html" class="active">Self-assessment</a>
+        <a href="code-review.html">Code review</a>
+        <a href="software-design.html">Software design</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="databases.html">Databases</a>
         <a href="https://github.com/AmauriHopewell" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
-    <section class="intro">
-      <h2>Professional ePortfolio</h2>
+    <section class="intro prose">
+      <h2>Professional self-assessment</h2>
       <p>
-        This site is my CS-499 capstone ePortfolio. It presents original and enhanced
-        coursework that demonstrates growth in software design and engineering,
-        algorithms and data structures, and databases. The work is written for
-        instructors, peers, and hiring managers who need evidence of how I design,
-        test, and secure software.
+        This site is the front of my CS-499 ePortfolio. My concentration is software
+        engineering. The three artifacts are CS-320 Contact, the CS-300 ABCU catalog,
+        and CS-340 AnimalShelter for Grazioso Salvare. The milestone narratives sit
+        with each artifact. This page is the introduction.
       </p>
       <p>
-        Concentration: Software Engineering. Languages used across the artifacts:
-        Java, C++, Python, SQL, and MongoDB.
+        I am aiming at software engineering internships and junior or SDET roles in
+        Washington, D.C. and Northern Virginia, on-site, hybrid, or remote, before
+        graduation and for May 2027. Amazon returns in Lexington taught me to look
+        at a package before the next person opens it. I use that check on an API
+        body, on a delete that can wipe a collection, and on a README that tells
+        someone how to run the code.
+      </p>
+      <p>
+        Original course files stay on <code>main</code>. Each enhancement is on its
+        own branch. Instructor comments on the milestone submissions did not add a
+        second code pass, so the branches below are the enhanced work.
+      </p>
+      <p class="actions">
+        <a class="btn" href="self-assessment.html">Read the full self-assessment</a>
+        <a class="btn alt" href="docs/CS-499_7-1_Professional_Self_Assessment_Amauri_Hopewell.pdf">PDF</a>
       </p>
     </section>
 
     <section id="artifacts">
-      <h2>Capstone Artifacts</h2>
+      <h2>Capstone artifacts</h2>
       <div class="cards">
         <article class="card">
-          <h3>Software Design and Engineering</h3>
+          <h3>Software design and engineering</h3>
           <p class="origin">CS-320 Software Testing, Automation, and QA</p>
-          <h4>Secure Contact / Task / Appointment Manager</h4>
+          <h4>Contact service</h4>
           <p>
-            Java CRUD services with JUnit, input validation, immutable IDs, and
-            more than 80% test coverage. Planned enhancement: layered REST design,
-            SQLite persistence, authentication, and audit logging.
+            Field rules and JUnit stayed. A repository, SQLite, a JDK HTTP API,
+            and an auth filter sit around ContactService. <code>mvn test</code> is 37 tests.
           </p>
-          <a class="btn" href="https://github.com/AmauriHopewell/CS320" target="_blank" rel="noopener">Original artifact</a>
+          <p class="actions">
+            <a class="btn" href="software-design.html">Open</a>
+            <a class="btn alt" href="https://github.com/AmauriHopewell/CS320/tree/cs499-milestone-two/enhanced" target="_blank" rel="noopener">Enhanced code</a>
+          </p>
         </article>
 
         <article class="card">
-          <h3>Algorithms and Data Structures</h3>
+          <h3>Algorithms and data structures</h3>
           <p class="origin">CS-300 DSA: Analysis and Design</p>
-          <h4>ABCU Course Catalog</h4>
+          <h4>ABCU course catalog</h4>
           <p>
-            C++ advising tool that loads, validates, sorts, and searches 500+
-            courses from a CSV using a vector. Planned enhancement: binary search
-            tree and hash map lookups, runtime comparison, and prerequisite ordering.
+            Vector, BST, and hash timed on the 129-course file, plus a topological
+            schedule. Compare mode needs a build with <code>/O2</code>.
           </p>
-          <a class="btn" href="https://github.com/AmauriHopewell/CS300" target="_blank" rel="noopener">Original artifact</a>
+          <p class="actions">
+            <a class="btn" href="algorithms.html">Open</a>
+            <a class="btn alt" href="https://github.com/AmauriHopewell/CS300/tree/cs499-milestone-three/enhanced" target="_blank" rel="noopener">Enhanced code</a>
+          </p>
         </article>
 
         <article class="card">
           <h3>Databases</h3>
           <p class="origin">CS-340 Client/Server Development</p>
-          <h4>Animal Shelter Dashboard</h4>
+          <h4>Grazioso Salvare dashboard</h4>
           <p>
-            Python CRUD module and Dash dashboard over MongoDB for Grazioso Salvare
-            rescue-candidate search. Planned enhancement: indexed queries, secrets
-            moved out of source, role-based access, and aggregation for data mining.
+            CRUD with credentials in the environment, a unique <code>animal_id</code>,
+            an allow-list, and staff versus admin. Tests and the dashboard run
+            without a live Mongo install.
           </p>
-          <a class="btn" href="https://github.com/AmauriHopewell/CS340" target="_blank" rel="noopener">Original artifact</a>
+          <p class="actions">
+            <a class="btn" href="databases.html">Open</a>
+            <a class="btn alt" href="https://github.com/AmauriHopewell/CS340/tree/cs499-milestone-four/enhanced" target="_blank" rel="noopener">Enhanced code</a>
+          </p>
         </article>
       </div>
     </section>
 
-    <section>
-      <h2>Course Outcomes This Portfolio Will Demonstrate</h2>
+    <section class="prose">
+      <h2>Course outcomes</h2>
       <ul class="outcomes">
-        <li>Collaborative review and decision-making through GitHub, comments, and a code-review video.</li>
-        <li>Professional written and visual communication through this site, narratives, and design diagrams.</li>
-        <li>Algorithmic design and explicit trade-offs among vector, tree, and hash-based lookups.</li>
-        <li>Industry practices: TDD, Git, MongoDB, REST layering, and logging.</li>
-        <li>A security mindset: validation, authentication, least privilege, and secrets management.</li>
+        <li>Outcome 1. Code-review video and public branches a reviewer can diff against <code>main</code>.</li>
+        <li>Outcome 2. This site, the self-assessment, and the three milestone narratives.</li>
+        <li>Outcome 3. HashMap versus SQLite on Contact, and vector versus BST versus hash on the catalog.</li>
+        <li>Outcome 4. JUnit, SQLite, C++, PyMongo, pytest, and a thin HTTP layer.</li>
+        <li>Outcome 5. Auth filter, an audit log that skips phone numbers, and AnimalShelter failing closed without credentials.</li>
       </ul>
     </section>
   </main>
@@ -92,7 +114,7 @@
   <footer>
     <div class="wrap">
       <p>Amauri Hopewell &middot; CS-499 Computer Science Capstone &middot; 2026</p>
-      <p><a href="https://github.com/AmauriHopewell">github.com/AmauriHopewell</a></p>
+      <p><a href="https://github.com/AmauriHopewell/CS-499">github.com/AmauriHopewell/CS-499</a></p>
     </div>
   </footer>
 </body>

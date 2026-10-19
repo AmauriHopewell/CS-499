@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Algorithms | Amauri Hopewell</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">CS-300 &middot; Algorithms and data structures</p>
+      <h1>ABCU course catalog</h1>
+      <p class="tagline">Original on main &middot; Enhancement on cs499-milestone-three</p>
+      <nav>
+        <a href="index.html">Self-assessment</a>
+        <a href="code-review.html">Code review</a>
+        <a href="software-design.html">Software design</a>
+        <a href="algorithms.html" class="active">Algorithms</a>
+        <a href="databases.html">Databases</a>
+        <a href="https://github.com/AmauriHopewell" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap prose">
+    <h2>What changed</h2>
+    <p>
+      The original program kept courses in a vector. The enhancement times that
+      vector against a BST and a hash map on the 129-course file. A sorted insert
+      into a BST becomes a chain, so the tree is filled from the median of the
+      sorted ids. Menu 6 prints a topological schedule from the prerequisite list.
+    </p>
+    <p>
+      Compare mode only means something if the binary is built with <code>/O2</code>.
+      The enhanced README has that command.
+    </p>
+    <h2>How to run</h2>
+    <p>From the <code>enhanced</code> folder on <code>cs499-milestone-three</code>, after the Visual C++ environment is loaded (the README has the <code>vcvars64</code> line):</p>
+    <p><code>cl /EHsc /std:c++17 /O2 Proj2.cpp /Fe:Proj2.exe</code></p>
+    <p>Then run <code>Proj2.exe</code> and use the compare option and menu 6. The original <code>Proj2.cpp</code> stays on <code>main</code>.</p>
+    <p class="actions">
+      <a class="btn" href="https://github.com/AmauriHopewell/CS300/tree/cs499-milestone-three/enhanced" target="_blank" rel="noopener">Enhanced code</a>
+      <a class="btn alt" href="https://github.com/AmauriHopewell/CS300" target="_blank" rel="noopener">Original (main)</a>
+      <a class="btn alt" href="docs/CS-499_4-2_Narrative_Algorithms_Amauri_Hopewell.pdf">Narrative PDF</a>
+    </p>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Amauri Hopewell &middot; CS-499 Computer Science Capstone &middot; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

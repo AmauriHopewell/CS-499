@@ -1,9 +1,11 @@
 # Amauri Hopewell — CS-499 ePortfolio
 
-GitHub Pages homepage for the Computer Science Capstone.
+GitHub Pages site for the Computer Science Capstone.
 
-Live site (after Pages is enabled): https://amaurihopewell.github.io/CS-499/
+Live site: https://amaurihopewell.github.io/CS-499/
 
-## Enable Pages
+Original artifact code stays on `main` in CS320, CS300, and CS340.
+Enhanced code is linked from the milestone branches. This repo does not vendor that source.
 
-Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
+The code-review video is not in this repo. It was submitted with Module Two.
+A YouTube link can be added on `code-review.html` when one exists.
